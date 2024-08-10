@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- AOS link css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- AOS js  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- fontawesome link -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+      <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> -->
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+ <!-- Preloader area start  -->
+  <div id="preloader">
+    <div id="container" class="container-preloader">
+      <div class="animation-preloader">
+        <div class="spinner"></div>
+
+      </div>	
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+  </div>	
+ <!-- Preloader area ends  -->
+
+  <div class="top"></div>
+    <!-- menubar start  -->
+  <div class="menubar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+        <img src="images/logo.png" class="img-fluid logo" alt="logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav m-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link active" style="color: #FF8686;" aria-current="page" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./doctors.html">Doctors</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="./blogs.html">Blogs</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+      </ul>
+      <ul class="navbar-nav language ms-auto">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-link dropdown-toggle" style="color: #FF8686;" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              English
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="#">English</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Hindi</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Bangla</a></li>
+            </ul>
+          </li>
+          </ul>
+      <form class="d-flex">
+          <button class="btn">Book Now</button>
+          <button class="btn">Login</button>
+      </form>
+    </div>
+  </div>
+</nav>
+  </div>
+<!-- menubar end  -->
+
+<!-- slider start  -->
+
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+    
+    <!-- The slideshow/carousel -->
+    <section class="section-one">
+  
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/slider1.jpg" alt="" class="d-block">
+        <div class="overlay">
+          <div class="carousole-content text-center">
+          <h2 class="carousel-title mb-4"  data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            Nothing is more <br/> important than <br/> wellness
+          </h2>
+            <p class="mb-5" data-aos="fade-up" data-aos-duration="3000">
+              Good health is the most precious thing to us! and that's why we <br/> are here to give you the best treatment with the help of the best <br/> doctors.
+            </p>
+            <button class="banner-btn" data-aos="fade-up" data-aos-duration="3000">Make Appoinment</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="images/slider2.jpg" alt="" class="d-block">
+        <div class="overlay">
+          <div class="carousole-content text-center">
+            <h2 class="carousel-title mb-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+              World class care right <br/> where you need it
+            </h2>
+              <p class="mb-5" data-aos="fade-up" data-aos-duration="3000">
+                Yes! You are in the right place, We deliver a world-class health <br/> service with the help of world-class doctors.
+              </p>
+              <button class="banner-btn" data-aos="fade-up" data-aos-duration="3000">Make Appoinment</button>
+            </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="images/slider3.jpg" alt="" class="d-block">
+        <div class="overlay">
+          <div class="carousole-content text-center">
+            <h2 class="carousel-title mb-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+              Where there is healing, <br/> there is hope
+            </h2>
+              <p class="mb-5" data-aos="fade-up" data-aos-duration="3000">
+                Experience the best health service with this site! Our doctors are <br/> well expert and give you the best service.
+               </p>
+              <button class="banner-btn" data-aos="fade-up" data-aos-duration="3000">Make Appoinment</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  
+</div>
+
+</section>
+<!-- slider end  -->
+
+<!-- choose area start  -->
+
+  <div class="choose-area mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <h2 class="choose-title mb-4">
+            Accelerate brand <br/> growth with Reviews <br/> and Loyalty
+          </h2>
+          <p class="choose-content mb-5">
+            We will utilize your money providing a <br/> source of high income while minimizing any <br/> possibility of risk in a very secure way.
+          </p>
+          <button class="book-btn">Book Now</button>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="choose-content-part">
+            <div class="row">
+              <div class="col-lg-6">
+             
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- choose area ends  -->
+
+<!-- doctor appoint section -->
+
+<section class="appoint-section mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="content-area mb-5">
+        <h2 class="appoint-section-title">
+          Our expert doctors
+        </h2>
+        <p class="appoint-section-content">
+          Docrib is a globally recognized market leader in healthcare, <br/> with leading medical professionals represented across <br/> each medical specialty.
+        </p>
+      </div>     
+    </div>
+    <div class="row" style="margin-right: -115px; margin-left: 10px;">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+      <div class="col-lg-3 col-md-6 col-sm-8 swiper-slide">
+        <div class="doctore-items mb-3">
+          <div class="doctore-thumb">
+            <img src="images/doctor7.jpg" class="img-fluid" alt="blog">
+            <span class="doctore-cart">ENT</span>
+          </div>
+          <div class="doctore-content-area">
+          <h4 class="doctore-content d-flex align-items-center mt-1 mb-1">
+            <a href="">
+              Dr. Dina Elijah  
+            </a>
+            <div class="icon mt-1"><i class="fa-solid fa-circle-check"></i></div>
+          </h4>
+          <p>MBBS, FRCS, FRCP</p>
+          <ul class="booking-list">
+            <li>
+               <i class="fa-solid fa-street-view"></i>
+               <a href="">Texas</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone-flip"></i>
+              <a href="">+880987999999</a>
+            </li>
+          </ul>
+          <div class="booking-btn">
+            <a href="">Book Now</a>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-8 swiper-slide">
+        <div class="doctore-items mb-3">
+          <div class="doctore-thumb">
+            <img src="images/doctor2.jpg" class="img-fluid" alt="blog">
+            <span class="doctore-cart">Cardiology</span>
+          </div>
+          <div class="doctore-content-area">
+            <h4 class="doctore-content d-flex align-items-center mt-1 mb-1">
+              <a href="">
+                Dr. Noor Benjamin 
+              </a>
+              <div class="icon mt-1"><i class="fa-solid fa-circle-check"></i></div>
+            </h4>
+          <p>FRCS, FRCOG, FRCP</p>
+          <ul class="booking-list">
+            <li>
+               <i class="fa-solid fa-street-view"></i>
+               <a href="">New Mexico</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone-flip"></i>
+              <a href="">+8807987899</a>
+            </li>
+          </ul>
+          <div class="booking-btn">
+            <a href="">Book Now</a>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-8 swiper-slide">
+        <div class="doctore-items mb-3">
+          <div class="doctore-thumb">
+            <img src="images/doctor3.jpg" class="img-fluid" alt="blog">
+            <span class="doctore-cart">Gynecology</span>
+          </div>
+          <div class="doctore-content-area">
+            <h4 class="doctore-content d-flex align-items-center mt-1 mb-1">
+              <a href="">
+                Dr. Emma Olivia  
+              </a>
+              <div class="icon mt-1"><i class="fa-solid fa-circle-check"></i></div>
+            </h4>
+          <p>MBBS, FRCS, FRCOG, FRCP</p>
+          <ul class="booking-list">
+            <li>
+               <i class="fa-solid fa-street-view"></i>
+               <a href="">North Carolina</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone-flip"></i>
+              <a href="">+880654488787</a>
+            </li>
+          </ul>
+          <div class="booking-btn">
+            <a href="">Book Now</a>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-8 swiper-slide">
+        <div class="doctore-items mb-3">
+          <div class="doctore-thumb">
+            <img src="images/doctor5.jpg" class="img-fluid" alt="blog">
+            <span class="doctore-cart">Oncology</span>
+          </div>
+          <div class="doctore-content-area">
+            <h4 class="doctore-content d-flex align-items-center mt-1 mb-1">
+              <a href="">
+                Dr. Mary Edwards 
+              </a>
+              <div class="icon mt-1"><i class="fa-solid fa-circle-check"></i></div>
+            </h4>
+          <p>MBBS, MCPS, MSc (Immunology)</p>
+          <ul class="booking-list">
+            <li>
+               <i class="fa-solid fa-street-view"></i>
+               <a href="">North Carolina</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone-flip"></i>
+              <a href="">+88001286545</a>
+            </li>
+          </ul>
+          <div class="booking-btn">
+            <a href="">Book Now</a>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-8 swiper-slide">
+        <div class="doctore-items mb-3">
+          <div class="doctore-thumb">
+            <img src="images/doctore8.jpg" class="img-fluid" alt="blog">
+            <span class="doctore-cart">Ophthalmology</span>
+          </div>
+          <div class="doctore-content-area">
+            <h4 class="doctore-content d-flex align-items-center mt-1 mb-1">
+              <a href="">
+                Dr. Sherrinford William 
+              </a>
+              <div class="icon mt-1"><i class="fa-solid fa-circle-check"></i></div>
+            </h4>
+          <p>MBBS, DCO(ICO,Ctg) , MPHO (UniSA)</p>
+          <ul class="booking-list">
+            <li>
+               <i class="fa-solid fa-street-view"></i>
+               <a href="">New Mexico</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone-flip"></i>
+              <a href="">+880624564156</a>
+            </li>
+          </ul>
+          <div class="booking-btn">
+            <a href="">Book Now</a>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-8 swiper-slide">
+        <div class="doctore-items mb-3">
+          <div class="doctore-thumb">
+            <img src="images/doctore9.jpg" class="img-fluid" alt="blog">
+            <span class="doctore-cart">Neurology</span>
+          </div>
+          <div class="doctore-content-area">
+            <h4 class="doctore-content d-flex align-items-center mt-1 mb-1">
+              <a href="">
+                Dr. Royal Matthew  
+              </a>
+              <div class="icon mt-1"><i class="fa-solid fa-circle-check"></i></div>
+            </h4>
+          <p>MD FACP(USA) MBBS. (Oncologist)</p>
+          <ul class="booking-list">
+            <li>
+               <i class="fa-solid fa-street-view"></i>
+               <a href=""> North Carolina</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone-flip"></i>
+              <a href="">+88056456459</a>
+            </li>
+          </ul>
+          <div class="booking-btn">
+            <a href="">Book Now</a>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-8 swiper-slide">
+        <div class="doctore-items mb-3">
+          <div class="doctore-thumb">
+            <img src="images/doctor6.jpg" class="img-fluid" alt="blog">
+            <span class="doctore-cart">Gynecology</span>
+          </div>
+          <div class="doctore-content-area">
+            <h4 class="doctore-content d-flex align-items-center mt-1 mb-1">
+              <a href="">
+                Dr. Elizabeth Blackwell   
+              </a>
+              <div class="icon mt-1"><i class="fa-solid fa-circle-check"></i></div>
+            </h4>
+          <p>MBBS, FRCS, FRCOG, FRCP, FCPS</p>
+          <ul class="booking-list">
+            <li>
+               <i class="fa-solid fa-street-view"></i>
+               <a href="">Texas</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone-flip"></i>
+              <a href="">+8809787465</a>
+            </li>
+          </ul>
+          <div class="booking-btn">
+            <a href="">Book Now</a>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-8 swiper-slide">
+        <div class="doctore-items mb-3">
+          <div class="doctore-thumb">
+            <img src="images/doctor4.jpg" class="img-fluid" alt="blog">
+            <span class="doctore-cart">Dental</span>
+          </div>
+          <div class="doctore-content-area">
+            <h4 class="doctore-content d-flex align-items-center mt-1 mb-1">
+              <a href="">
+                Dr. Danneal Walker   
+              </a>
+              <div class="icon mt-1"><i class="fa-solid fa-circle-check"></i></div>
+            </h4>
+          <p>BDS, MDS - Oral & Maxillofacial Surgery</p>
+          <ul class="booking-list">
+            <li>
+               <i class="fa-solid fa-street-view"></i>
+               <a href="">Texas</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone-flip"></i>
+              <a href="">+880014656235</a>
+            </li>
+          </ul>
+          <div class="booking-btn">
+            <a href="">Book Now</a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    </div>
+    </div>
+  </div>
+</section>
+<div class="fake" style="height: 45px;"></div>
+
+<!-- doctor appoint section -->
+
+<!-- Search doctor, Make an appointment area start  -->
+
+  <div class="appoinment-area text-center">
+    <div class="appoinment-banner">
+      <div class="overlay">
+      <div class="appoinment-content">
+        <h3>Search doctor, Make an appointment</h3>
+        <p class="mb-5">Discover the best doctors, clinics, and hospitals in the city nearest to you</p>
+        <form action="">
+        <select id="cars" name="cars">
+          <option value="">location</option>
+          <option value="">Texos</option>
+          <option value="">North Carolino</option>
+          <option value="">New Mexico</option>
+        </select>
+        <select id="cars" name="cars">
+          <option value="">autocomplete</option>
+          <option value="">Dental</option>
+          <option value="">Ent</option>
+          <option value="">Oncology</option>
+          <option value="">Neurology</option>
+          <option value="">Cardiology</option>
+        </select>
+          <input type="text" placeholder="Search.." name="search">
+          <button class="submit-button" type="submit"><i class="fa fa-search fa-rotate-90"></i></button>
+        </form>
+      </div>
+    </div>
+    </div>
+  </div>
+
+<!-- Search doctor, Make an appointment area ends  -->
+
+<!-- doctors details start -->
+
+<section class="our-doctor-team mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="header-section">
+          <h2 class="title-section">
+            Meet with our feature doctors
+          </h2>
+          <p>Meet with leading medical professionals represented <br/> across each medical specialty.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xl-6 col-lg-4 col-md-6">
+        <div class="team-item d-flex flex-wrap align-items-center justify-content-between">
+          <div class="team-thumb">
+            <img src="images/doctor2.jpg" class="img-fluid" alt="">
+            <div class="team-thumb-overlay">
+              <div class="social-icon">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="team-content">
+            <h5 class="title">Dr. Noor Benjamin</h5>
+            <p>He is commonly known as a <br/> Bangladeshi and obstetrician. She <br/> was awarde...</p>
+            <h6 class="title">Qualification</h6>
+            <p>FRCS, FRCOG, FRCP</p>
+            <div class="booking-btn"> Book Now</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-6 col-lg-4 col-md-6">
+        <div class="team-item d-flex flex-wrap align-items-center justify-content-between">
+          <div class="team-thumb">
+            <img src="images/doctor3.jpg" class="img-fluid" alt="">
+            <div class="team-thumb-overlay">
+              <ul class="social-icon">
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="team-content">
+            <h5 class="title">Dr. Emma Olivia</h5>
+            <p>He is commonly known as a <br/> Bangladeshi and obstetrician. She <br/> was awarde...</p>
+            <h6 class="title">Qualification</h6>
+            <p>MBBS, FRCS, FRCOG, FRCP</p>
+            <div class="booking-btn"> Book Now</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-6 col-lg-4 col-md-6">
+        <div class="team-item d-flex flex-wrap align-items-center justify-content-between">
+          <div class="team-thumb">
+            <img src="images/doctor6.jpg" class="img-fluid" alt="">
+            <div class="team-thumb-overlay">
+              <ul class="social-icon">
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="team-content">
+            <h5 class="title">Dr. Elizabeth Blackwell</h5>
+            <p>She is commonly known as a <br/> Bangladeshi gynaecologist and <br/> obstetrician.</p>
+            <h6 class="title">Qualification</h6>
+            <p>MBBS, FRCS, FRCOG, FRCP, FCPSP</p>
+            <div class="booking-btn"> Book Now</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-6 col-lg-4 col-md-6">
+        <div class="team-item d-flex flex-wrap align-items-center justify-content-between">
+          <div class="team-thumb">
+            <img src="images/doctor4.jpg" class="img-fluid" alt="">
+            <div class="team-thumb-overlay">
+              <ul class="social-icon">
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="team-content">
+            <h5 class="title">Dr. Danneal Walker</h5>
+            <p>He was born in the year 1990 at <br/> Azimpur. His father Md Abdul Mazid<br/> was...</p>
+            <h6 class="title">Qualification</h6>
+            <p>BDS, MDS - Oral & Maxillofacia...</p>
+            <div class="booking-btn"> Book Now</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="view-more-btn text-center mt-5">
+        <a href="" class="btn">View More</a>
+    </div>
+  </div>
+</section>
+
+<!-- doctors details end -->
+
+
+
+<!-- question area start -->
+
+<div class="question-area mt-5">
+  <div class="container">
+    <div class="row">
+      <h2 class="question-title">Frequently Asked Questions</h2>
+      <p>What People Asked From Us? We answer some of your <br/> Frequently Asked Questions regarding our platform. If <br/> you have a query that is not answered here, Please feel <br/> free to contact us.</p>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-md-6">
+        <ul class="accordion-list">
+          <li>
+            <h3>The phone line is busy, is there something I can do about it?</h3>
+            <div class="answer">
+              <p>We try to give our best service to our patients and it can get very busy from time to time. Please try again a few minutes later or look at the solutions below.</p>
+              
+                
+            </div>
+          </li>
+
+          <li>
+            <h3>If I call with a question for the nurse or doctor, when can I expect a call back?</h3>
+            <div class="answer"><p>Our physicians and nurses are with patients throughout the day, so it is usually not possible for them to immediately answer phone calls. We will return your call as soon as possible. To help us get back to you quickly leave us your full name, date of birth, reason for the call and current phone number.</p></div>
+          </li>
+
+          <li>
+            <h3>Will you bill my insurance?</h3>
+            <div class="answer">
+              <p>Yes. As a service to our patients, primary insurance is billed. We have recently enhanced our system to accommodate automatic billing of secondary insurance. Please be sure to keep us informed of your insurance coverage.</p>
+              
+            </div>
+          </li>
+
+          <li>
+            <h3>How do I get my blood pressure checked?</h3>
+            <div class="answer">
+              <p>Blood pressure checks are provided complimentary at each of our locations. Call the clinic nearest you for details.</p>
+              
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="col-lg-6 col-md-6">
+        <ul class="accordion-list">
+        <li>
+          <h3>Do you have after hours care?</h3>
+          <div class="answer">
+            <p>If you are having a life threatening emergency, call 911. If you call after clinic hours, the answering service will receive your call. They will take your name, phone number and nature of your call. The answering service will page the on-call physician who will call you back within 15 minutes.
+              Do I have</p>
+          </div>
+        </li>
+
+        <li>
+          <h3>Do I have to re-register if I have services at multiple locations?</h3>
+          <div class="answer">
+            <p>No, we have Electronic Healthcare Records (EHR) for our patients. This system will allow your information to be available at all of our clinic locations, further improving efficiency and quality of the healthcare you receive.</p>
+          </div>
+        </li>
+
+        <li>
+          <h3>What if I can't make my appointment and I need to reschedule?</h3>
+          <div class="answer">
+            <p>Please call your physician’s office as soon as you realize you will not be able to keep your appointment. We prefer all cancellations be made at least 24 hours prior to your scheduled appointment time. This will allow us to give another patient the opportunity to be seen.</p>             
+          </div>
+        </li>
+
+        <li>
+          <h3>What information will the Patient Services Representative need to schedule an appointment?
+          </h3>
+          <div class="answer">
+            <p>Appointment please have the following patient information ready: Patient’s full name (including middle initial) Date of birth Current address and phone number Current insurance information Physician’s name who you wish to schedule appointment with Purpose of the appointment* *It is important to let the scheduler know about all of the concerns you would like addressed during your appointment so we can schedule the appropriate amount of time to care for your needs.</p>             
+          </div>
+        </li>
+      </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- question area end -->
+
+<!-- client area start  -->
+
+<div class="client-area-start">
+  <div class="client">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="client-area text-center">
+          <div class="client-content">
+            <p>Working with Teladoc Health helps us to educate our providers and our nurses in understanding cues to identify patients and helps us run algorithms</p>
+          </div>
+          <div class="client-image">
+            <img src="images/client1.png" alt="">
+          </div>
+          <div class="client-name mt-3">
+            <h4 class="title">John Bulger</h4>
+            <p class="sub-title">Geisinger Health Plan</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="client-area text-center">
+          <div class="client-content">
+            <p>Making quality healthcare available to all of our community members without interruption is our #1 priority, and virtual care continues to make this possible.</p>
+          </div>
+          <div class="client-image">
+            <img src="images/client-2.png" alt="">
+          </div>
+          <div class="client-name mt-3">
+            <h4 class="title">Jemisn Hulux</h4>
+            <p class="sub-title">Health New England</p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- client area  ends  -->
+
+<!-- brand area start  -->
+
+    <div class="brand mt-5 mb-5 text-center gap-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2"><img src="images/brand1.png" alt=""></div>
+                <div class="col-lg-2"><img src="images/brand2.png" alt=""></div>
+                <div class="col-lg-2"><img src="images/brand3.png" alt=""></div>
+                <div class="col-lg-2"><img src="images/brand4.png" alt=""></div>
+                <div class="col-lg-2"><img src="images/brand5.png" alt=""></div>
+                <div class="col-lg-2"><img src="images/brand6.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+<!-- brand area start  -->
+
+<!-- map area start  -->
+
+    <div class="google-map mt-3 mb-5">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.6582109575806!2d88.3197655142122!3d22.479474785230792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89dc46545cf5d%3A0x2bb744262e8c7287!2sProWebHill%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1680698881946!5m2!1sen!2sin" width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+    </div>
+
+<!-- map area end  -->
+
+ <!-- Our Latest News area start  -->
+
+<div class="our-blog">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <div class="section-header-area">
+          <h2 class=".section-header-title">
+            Latest News
+          </h2>
+          <p>You will get all the latest news and health tips on our <br/> website. Keep an eye on our Latest News to be in touch.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-8">
+        <div class="blog-items mb-3">
+          <div class="blog-thumb">
+            <img src="images/blog1.jpg" class="img-fluid" alt="blog">
+            <span class="blog-cart">Neurologist</span>
+          </div>
+          <div class="blog-content-area">
+          <h4 class="blog-content mt-3 mb-4">
+            <a href="">
+              Ask a Top Neurologist: Dr Hadi Manj... 
+            </a>
+          </h4>
+          <p>A neurologist is a specialist who analyses and treats injuries and diseases of t...</p>
+          <div class="blog-btn">
+            <a href="">Continue Reading</a>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-8">
+        <div class="blog-items mb-4">
+          <div class="blog-thumb">
+            <img src="images/blog2.jpg" class="img-fluid" alt="blog">
+            <span class="blog-cart">Healthcare system</span>
+          </div>
+          <div class="blog-content-area">
+          <h4 class="blog-content mt-3 mb-3">
+            <a href="">
+              Free offers  e-Consultation to Doct...  
+            </a>
+          </h4>
+          <p>Solidarity to help decongest the healthcare systemIn the last week, calls from d...</p>
+          <div class="blog-btn">
+            <a href="">Continue Reading</a>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-8">
+        <div class="blog-items">
+          <div class="blog-thumb">
+            <img src="images/blog3.jpg" class="img-fluid" alt="blog">
+            <span class="blog-cart">General Knowledge</span>
+          </div>
+          <div class="blog-content-area">
+          <h4 class="blog-content mt-3 mb-3">
+            <a href="">
+              How to break an addiction to sugar 
+            </a>
+          </h4>
+          <p>The white stuff. Stop what you’re thinking, I am talking about sugar. The Britis...</p>
+          <div class="blog-btn">
+            <a href="">Continue Reading</a>
+          </div>
+        </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      </div>
+    <!-- Our Latest News area end  -->
+
+    <!-- call section start  -->
+
+      <section class="call-section mb-5">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-lg-8 text-center">
+              <div class="call-area">
+                <div class="call">
+                  <div class="call-image">
+                    <img src="images/call.png" alt="call">
+                  </div>
+                  <div class="call-content">
+                    <h4 class="title">
+                      <span>Emergency Call</span>
+                      <a href="tell+12345-678-9">+12345-678-9</a>
+                    </h4>
+                  </div>
+                </div>
+
+                <div class="mail">
+                  <div class="mail-image">
+                    <img src="images/mail.png" alt="mail">
+                  </div>
+                  <div class="mail-content">
+                    <h4 class="title">
+                      <span>24/7 Email Support</span>
+                      <a href="mailtoinfo@domain.com">info@domain.com</a>
+                    </h4>
+                  </div>
+                </div>
+                <span class="or-text">- OR -</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    <!-- call section ends  -->
+
+<!-- footer start  -->
+<section class="footer mt-5">
+  <div class="footer-area ">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-4 col-sm-6 mrb-30">
+                <div class="footer-wedge">
+                  <div class="footer-logo">
+                    <a href="">
+                      <img src="images/logo.png" class="img-fluid footer-logo" alt="logo">
+                    </a>
+                  </div>
+                
+                <p class="mt-4 mb-4">DOCRIB is the best place to find your preferable specialist and doctors. So feel free to contact us and get the best experience.</p>
+                <ul class="footer-content">
+                    <li>
+                      <i class="fa-solid fa-map-location-dot" style="color: #FF8686;"></i>
+                       123 New Street, Melbourne , Australia 54214  
+                    </li>
+                    <li>  
+                      <i class="fa-solid fa-envelope" style="color: #FF8686;"></i>
+                       demo@demo.com
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-headphones" style="color: #FF8686;"></i>
+                      +88-123456789
+                    </li>
+                </ul>
+              </div>
+              </div>
+              <div class="col-lg-2 col-sm-6">
+                <div class="footer-wedge">
+                  <h3 class="wedge-title mb-4">
+                    Department Based
+                  </h3>
+
+                  <ul class="footer-menu" style="color: #fff;">
+                    <li>
+                      <i class="fa-solid fa-right-long" style="color: #FF8686;"></i>
+                      Hematologist
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-right-long" style="color: #FF8686;"></i>
+                      Ophthalmology
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-right-long" style="color: #FF8686;"></i>
+                      Dental
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-right-long" style="color: #FF8686;"></i>
+                      ENT
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-right-long" style="color: #FF8686;"></i>
+                      Oncology
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-right-long" style="color: #FF8686;"></i>
+                      Neurology
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-lg-2 col-sm-6">
+                <div class="footer-wedge">
+                  <h3 class="wedge-title mb-4">
+                    Area Based
+                  </h3>
+                  <ul class="footer-menu" style="color: #fff;">
+                    <li>
+                      <i class="fa-solid fa-right-long" style="color: #FF8686;"></i>
+                      California
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-right-long" style="color: #FF8686;"></i>
+                      Washington
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-right-long" style="color: #FF8686;"></i>
+                      Virginia
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-right-long" style="color: #FF8686;"></i>
+                      Oklahoma
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-right-long" style="color: #FF8686;"></i>
+                      New York
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-right-long" style="color: #FF8686;"></i>
+                      Texas
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="footer-wedge">
+                  <h3 class="wedge-title mb-4">
+                    Subscribe Newsletter
+                  </h3>
+                  <p>Once you subscribe to our newsletter, we will send our promo offers and news to your email.</p>
+                  <div class="footer-form">
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email" autocomplete="off">
+                    <button type="submit" class="submit-btn">
+                      <i class="fa-brands fa-telegram"></i>
+                    </button>
+                  </div>
+
+                  <div class="social-icon mt-4">
+                    <ul class="footer-icon">
+                      <li>
+                        <a href="https://in.pinterest.com/" target="_blank">
+                          <i class="fa-brands fa-pinterest"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                          <i class="fa-brands fa-facebook"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://twitter.com/" target="_blank">
+                          <i class="fa-brands fa-square-twitter"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="linkedin.com" target="_blank">
+                          <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                          <i class="fa-brands fa-youtube"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-1 col-sm-6"></div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Copyright section -->
+<div class="copyright">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+              <p class="mb-0">Copyright © 2023 | All Rights Reserved</p>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<!-- Scroll to top start -->
+
+<div class='scrolltop'>
+  <div class='scroll icon'><i class="fa-solid fa-angle-up" aria-hidden=""></i></div>
+
+<!-- Scroll to top ends -->
+<!-- footer end  -->
+
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    loop: true,
+    speed: 1800,
+    autoplay: {
+    delay: 800,
+    disableOnInteraction: false
+  },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      "@0.00": {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      "@0.75": {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      "@1.00": {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+      "@1.50": {
+        slidesPerView: 4,
+        spaceBetween: 50,
+      },
+    },
+  });
+  // accordion script
+
+$(document).ready(function(){
+  $('.accordion-list > li > .answer').hide();
+    
+  $('.accordion-list > li').click(function() {
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active").find(".answer").slideUp();
+    } else {
+      $(".accordion-list > li.active .answer").slideUp();
+      $(".accordion-list > li.active").removeClass("active");
+      $(this).addClass("active").find(".answer").slideDown();
+    }
+    return false;
+  });
+});
+
+// Scroll to top 
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 50 ) {
+        $('.scrolltop:hidden').stop(true, true).fadeIn();
+    } else {
+        $('.scrolltop').stop(true, true).fadeOut();
+    }
+});
+$(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:$(".top").offset().top},"1000");return false})})
+
+//  preloader                                                                                                         
+$(document).ready(function() {
+  setTimeout(function() {
+    $('#container').addClass('loaded');
+    // Once the container has finished, the scroll appears
+    if ($('#container').hasClass('loaded')) {
+      // It is so that once the container is gone, the entire preloader section is deleted
+      $('#preloader').delay(9000).queue(function() {
+        $(this).remove();
+      });}
+  }, 2000);});
+
+// AOS 
+  AOS.init();
+</script>
+
+</body>
+</html>
